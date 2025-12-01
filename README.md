@@ -2,11 +2,11 @@
 
 A **browser-based interactive visualisation tool** for comparing **initial binning results** and **[GraphBin](https://github.com/metagentools/GraphBin)-refined binning results** on assembly graphs.
 
-This project uses Pyodide (Python compiled to WebAssembly) to run igraph, GraphBin’s visualisation code, and your plotting pipeline entirely in the browser — no backend needed.
+This project uses Pyodide (Python compiled to WebAssembly) to run `igraph`, GraphBin’s graph visualisation code, and the plotting code entirely in the browser — no backend needed.
 
 ## Live Demo
 
-Please go to (metagentools.github.io/graphbin-visualise-wasm-app/)[https://metagentools.github.io/graphbin-visualise-wasm-app/] for a live demo hosted on GitHub Pages. 
+Please go to [metagentools.github.io/graphbin-visualise-wasm-app/](https://metagentools.github.io/graphbin-visualise-wasm-app/) for a live demo hosted on GitHub Pages. 
 
 ## Features
 
