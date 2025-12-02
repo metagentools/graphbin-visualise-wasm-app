@@ -10,6 +10,16 @@ function log(msg) {
 // store Pyodide init promise here, but don't start it yet
 let pyodideReady = null;
 
+document.getElementById("graph").addEventListener("change", function () {
+  const file = this.files[0];
+  const MAX_SIZE = 100 * 1024 * 1024; // 100MB
+
+  if (file && file.size > MAX_SIZE) {
+    alert("GFA file is too large! Maximum allowed size is 100 MB.");
+    this.value = ""; // clear file input
+  }
+});
+
 async function getPyodide() {
   // if already starting/ready, reuse
   if (pyodideReady) {
@@ -310,7 +320,6 @@ document.getElementById("example-btn").addEventListener("click", () => {
     log("Error (example): " + err);
   });
 });
-
 
 document.getElementById("download-initial").addEventListener("click", () => {
   downloadImage("initial").catch(err => {
