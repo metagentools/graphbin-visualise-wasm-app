@@ -12,10 +12,20 @@ let pyodideReady = null;
 
 document.getElementById("graph").addEventListener("change", function () {
   const file = this.files[0];
-  const MAX_SIZE = 100 * 1024 * 1024; // 100MB
+  const MAX_SIZE = 500 * 1024 * 1024; // 500MB
 
   if (file && file.size > MAX_SIZE) {
-    alert("GFA file is too large! Maximum allowed size is 100 MB.");
+    alert("GFA file is too large! Maximum allowed size is 200 MB.");
+    this.value = ""; // clear file input
+  }
+});
+
+document.getElementById("contigs").addEventListener("change", function () {
+  const file = this.files[0];
+  const MAX_SIZE = 500 * 1024 * 1024; // 500MB
+
+  if (file && file.size > MAX_SIZE) {
+    alert("Contigs file is too large! Maximum allowed size is 500 MB.");
     this.value = ""; // clear file input
   }
 });
