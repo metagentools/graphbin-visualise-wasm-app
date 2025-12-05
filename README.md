@@ -53,7 +53,7 @@ http://localhost:8000
 
 ## Citation
 
-If you use this in your work, please cite GraphBin, GraphBin-Tk (full citations below) and and the Wasm ABABCS2025 Workshop (doi: https://doi.org/10.5281/zenodo.17743837).
+If you use this in your work, please cite GraphBin, GraphBin-Tk (full citations below) and the Wasm ABABCS2025 Workshop (doi: https://doi.org/10.5281/zenodo.17743837).
 
 > Vijini Mallawaarachchi, Anuradha Wickramarachchi, Yu Lin. GraphBin: Refined binning of metagenomic contigs using assembly graphs. Bioinformatics, Volume 36, Issue 11, June 2020, Pages 3307–3313, DOI: https://doi.org/10.1093/bioinformatics/btaa180
 
